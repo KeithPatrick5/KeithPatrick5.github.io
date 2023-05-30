@@ -1,0 +1,166 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#desk {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.imgur.com/xpRgbGX.jpgg") no-repeat center
+    center/cover;
+}
+
+.interactive {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+#phone {
+  top: 35%;
+  left: 25%;
+  width: 75px;
+  height: 75px;
+}
+
+#diploma {
+  top: 40%;
+  left: 60%;
+  width: 75px;
+  height: 75px;
+}
+
+#diploma2 {
+  top: 70%;
+  left: 15%;
+  width: 75px;
+  height: 75px;
+}
+
+#globe {
+  top: 55%;
+  left: 40%;
+  width: 75px;
+  height: 75px;
+}
+
+#book1 {
+  top: 45%;
+  left: 85%;
+  width: 75px;
+  height: 75px;
+}
+
+#book2 {
+  top: 80%;
+  left: 70%;
+  width: 75px;
+  height: 75px;
+}
+
+#book3 {
+  top: 40%;
+  left: 20%;
+  width: 75px;
+  height: 75px;
+}
+
+#book4 {
+  top: 75%;
+  left: 10%;
+  width: 75px;
+  height: 75px;
+}
+
+#book5 {
+  top: 85%;
+  left: 35%;
+  width: 75px;
+  height: 75px;
+}
+
+#book6 {
+  top: 65%;
+  left: 45%;
+  width: 75px;
+  height: 75px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #2b1510;
+  /* background-color: #fefefe; */
+  margin: 15% auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  border: 1px solid #2b1510;
+  width: 60%;
+  border-radius: 16px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 15px;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-text {
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+#modal-text br {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .interactive {
+    width: 105px;
+    height: 105px;
+  }
+  .modal-content {
+    margin: 25% auto;
+    width: 80%;
+  }
+  .close {
+    font-size: 48px;
+    right: 20px;
+    top: 20px;
+  }
+  #modal-text {
+    line-height: 36px;
+    font-size: 18px;
+  }
+  #book1 {
+    right: 0;
+    left: inherit;
+  }
+}
